@@ -22,6 +22,6 @@ class Knight
   end
 
   def generate_children
-    valid_moves.each { |move| @children << Knight.new(move, self) }
+    @children = valid_moves.each { |move| Knight.new(move, self) }
   end
 end
