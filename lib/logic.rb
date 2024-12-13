@@ -3,7 +3,7 @@ require_relative 'knight'
 class Logic
   def knight_moves(current_position, destination)
     # Move validation and edge cases
-    puts "Invalid input, try again" if valid_position?(current_position) && valid_position?(destination)
+    puts "Invalid input, try again" unless valid_position?(current_position) && valid_position?(destination)
     puts "Already at destination" if current_position == destination
 
     destination_node = move_search(current_position, destination)
