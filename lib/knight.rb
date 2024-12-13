@@ -7,7 +7,7 @@ class Knight
     [-2, 1], [-2, -1], # Down 2, left/right 1
     [1, 2], [-1, 2], # Right 2, up/down 1
     [1, -2], [-1, -2]  # Left 2, up/down 1
-].freeze
+  ].freeze
 
   def initialize(position, parent=nil) 
     @position = position # All positions in this project will be an array of two ints between 0 and 7 (i.e. [2, 4])
